@@ -12,18 +12,24 @@ const router = createRouter({
     {
       path: '/about',
       name: 'about',
-      component: () => import('../views/AboutView.vue')
+      component: () => import('@/views/AboutView.vue')
     },
     {
       path: '/page1',
       name: 'page1',
-      component: () => import('../views/Page1.vue')
+      component: () => import('@/views/Page1.vue')
     },
     {
       path: '/page2',
       name: 'page2',
-      component: () => import('../views/Page2.vue')
+      component: () => import('@/views/Page2.vue')
     }
+    ,{
+      path: '/page3',
+      name: 'page3',
+      component: () => import('@/views/Page3.vue')
+    }
+    //addrouter
   ]
 })
 

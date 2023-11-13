@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import {reactive, ref,getCurrentInstance} from 'vue'
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 import zhCn from 'element-plus/es/locale/lang/zh-cn'
 import enUs from 'element-plus/es/locale/lang/en'
 import {useI18n} from "vue-i18n";
@@ -35,6 +34,8 @@ const doChangeLang=()=>{
     <RouterLink to="/about">About</RouterLink>
     <RouterLink to="/page1">Page1</RouterLink>
     <RouterLink to="/page2">Page2</RouterLink>
+    <RouterLink to="/page3">Page3</RouterLink>
+    <!--addurl-->
   </div>
   <RouterView />
 </el-config-provider>
